@@ -1,5 +1,5 @@
-# DC-GAN
-Generating MNIST Digit Dataset using Deep Convolutional Generative Adversarial Network
+# GAN - Generative Adversarial Network
+Generating MNIST Digit Dataset using Generative Adversarial Network
 
 ## GAN
 > In a machine learning (ML) model called a generative adversarial network (GAN), two neural networks fight with one another to make predictions that are more correct. GANs generally operate unsupervised and learn through cooperative zero-sum games.
