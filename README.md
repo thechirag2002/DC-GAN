@@ -19,5 +19,10 @@ The discriminator gains the ability to discern real data from bogus data generat
 #### Included the dataset using the following code-
 ` (X_train, y_train), (X_test, y_test) = mnist.load_data() `
 
-A GAN built with generator of
-` 
+`discriminator=Build_Disc()
+discriminator.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])`
+<img src="https://miro.medium.com/max/584/1*2lSjt9YKJn9sxK7DSeGDyw.jpeg" width="400" height="300"/>
+
+`generator=Build_Gen()
+generator.compile(loss='binary_crossentropy',optimizer=optimizer)`
+<img src="https://miro.medium.com/max/584/1*2lSjt9YKJn9sxK7DSeGDyw.jpeg" width="400" height="300"/>
