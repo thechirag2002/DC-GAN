@@ -19,10 +19,28 @@ The discriminator gains the ability to discern real data from bogus data generat
 #### Included the dataset using the following code-
 ` (X_train, y_train), (X_test, y_test) = mnist.load_data() `
 
-`discriminator=Build_Disc()
-discriminator.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])`
-<img src="https://miro.medium.com/max/584/1*2lSjt9YKJn9sxK7DSeGDyw.jpeg" width="400" height="300"/>
+## GENERATOR
 
-`generator=Build_Gen()
-generator.compile(loss='binary_crossentropy',optimizer=optimizer)`
-<img src="https://miro.medium.com/max/584/1*2lSjt9YKJn9sxK7DSeGDyw.jpeg" width="400" height="300"/>
+`generator=Build_Gen()`
+
+`generator.compile(loss='binary_crossentropy',optimizer=optimizer)`
+
+<img src="https://github.com/thechirag2002/GAN-MNIST/blob/eb282ffc14a5f46889c4e6bcf8b85a365c143d10/models/generator.png" width="400" height="450"/>
+
+## DISCRIMINATOR
+
+`discriminator=Build_Disc()`
+
+`discriminator.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])`
+
+<img src="https://github.com/thechirag2002/GAN-MNIST/blob/eb282ffc14a5f46889c4e6bcf8b85a365c143d10/models/discriminator.png" width="400" height="300"/>
+
+> With a limited availability of CPU, code has been runned for ***8000 epochs*** and at each **1000 epochs** interval, images generated from noise has been saved.
+
+> These images were obtained with gradually decreased noise 
+
+## Epoch 1000
+<img src="https://github.com/thechirag2002/GAN-MNIST/blob/eb282ffc14a5f46889c4e6bcf8b85a365c143d10/output/epoch-1000.png" width="300" height="300"/>
+
+## Epoch 8000
+<img src="https://github.com/thechirag2002/GAN-MNIST/blob/eb282ffc14a5f46889c4e6bcf8b85a365c143d10/output/epoch-8000.png" width="300" height="300"/>
